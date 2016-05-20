@@ -7,7 +7,7 @@ use App\Coffee;
 
 class CoffeeTest extends PHPUnit_Framework_TestCase
 {
-    public function testVerificaSeTemCafeEDeveRetornarFalsoPoisEstaVazio()
+    public function testVerificaSeTemCafeEDeveRetornarTruePoisEstaVazio()
     {
         $coffee = new Coffee();
         $coffee->refill();
