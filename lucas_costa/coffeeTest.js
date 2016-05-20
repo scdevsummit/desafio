@@ -1,6 +1,14 @@
 require('chai').should();
 const Coffee = require('./Coffee.js');
 
+describe('Challenge', () => {
+    const Coffee = new Coffee();
+
+    before(() => {
+    });
+
+});
+
 describe('Coffee', () => {
     describe('.isEmpty', () => {
         it('Should return true when coffee is empty', () => {
