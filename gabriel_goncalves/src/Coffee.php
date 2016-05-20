@@ -21,10 +21,10 @@ class Coffee
     {
         if ($this->isEmpty) {
             $this->refill();
-        } else {
-            $this->drink();
+            return $this->isEmpty;
         }
 
+        $this->drink();
         return $this->isEmpty;
 
     }
