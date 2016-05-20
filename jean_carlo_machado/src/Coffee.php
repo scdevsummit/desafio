@@ -31,6 +31,8 @@ class Coffee
 
     public function programmersLife()
     {
-        $this->refill();
+        if (!$this->hasCoffee()) {
+            $this->refill();
+        }
     }
 }
