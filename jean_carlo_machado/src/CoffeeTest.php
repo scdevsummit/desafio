@@ -16,5 +16,13 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
 
         static::assertFalse($coffee->hasCoffee());
     }
+
+    public function testAfterRefillCoffeeIsNotEmpty()
+    {
+        $coffee = new Coffee;
+        $coffee->refill();
+
+        static::assertTrue($coffee->hasCoffee());
+    }
 }
 
