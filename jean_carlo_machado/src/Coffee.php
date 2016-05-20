@@ -32,7 +32,7 @@ class Coffee
     public function programmersLife()
     {
         if (!$this->hasCoffee()) {
-            $this->refill();
+            return $this->refill();
         }
 
         $this->drink();
