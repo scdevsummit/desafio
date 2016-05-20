@@ -35,5 +35,17 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
         $coffee->expects($this->once())->method('refill');
         $coffee->programmersLife();
     }
+
+    public function testCoffeeIsNotRefilledWhenItsNotEmpty()
+    {
+        $coffee = $this->getMockBuilder(Coffee::class)
+            ->setMethods(['refill'])
+            ->getMock();
+
+        $coffee->expects($this->never())->method('refill');
+        $coffee->programmersLife();
+    }
+
+
 }
 
