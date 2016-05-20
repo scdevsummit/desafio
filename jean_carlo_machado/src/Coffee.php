@@ -19,6 +19,11 @@ class Coffee
         $this->hasCoffee = false;
     }
 
+    public function refill()
+    {
+        $this->hasCoffee = true;
+    }
+
     public function hasCoffee()
     {
         return $this->hasCoffee;
