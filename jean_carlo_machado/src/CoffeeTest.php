@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Desafio;
 
 use Desafio\Coffee;
@@ -12,6 +14,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
     public function testDrinkCoffeeMakesItEmpty()
     {
         $coffee = new Coffee;
+
         $coffee->drink();
 
         static::assertFalse($coffee->hasCoffee());
@@ -20,6 +23,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
     public function testAfterRefillCoffeeIsNotEmpty()
     {
         $coffee = new Coffee;
+
         $coffee->refill();
 
         static::assertTrue($coffee->hasCoffee());
@@ -33,6 +37,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         $coffee->expects($this->once())->method('refill');
+
         $coffee->programmersLife();
     }
 
@@ -43,6 +48,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         $coffee->expects($this->never())->method('refill');
+
         $coffee->programmersLife();
     }
 
@@ -53,6 +59,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         $coffee->expects($this->once())->method('drink');
+
         $coffee->programmersLife();
     }
 
@@ -64,6 +71,7 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
             ->getMock();
 
         $coffee->expects($this->never())->method('drink');
+
         $coffee->programmersLife();
     }
 }

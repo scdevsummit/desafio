@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Desafio;
 
 /**
@@ -9,7 +11,7 @@ class Coffee
 {
     private $hasCoffee;
 
-    public function __construct($hasCoffee = true)
+    public function __construct(bool $hasCoffee = true)
     {
         $this->hasCoffee = $hasCoffee;
     }
@@ -24,7 +26,7 @@ class Coffee
         $this->hasCoffee = true;
     }
 
-    public function hasCoffee()
+    public function hasCoffee() : bool
     {
         return $this->hasCoffee;
     }
@@ -32,7 +34,8 @@ class Coffee
     public function programmersLife()
     {
         if (!$this->hasCoffee()) {
-            return $this->refill();
+            $this->refill();
+            return;
         }
 
         $this->drink();
