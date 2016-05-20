@@ -34,5 +34,7 @@ class Coffee
         if (!$this->hasCoffee()) {
             $this->refill();
         }
+
+        $this->drink();
     }
 }
