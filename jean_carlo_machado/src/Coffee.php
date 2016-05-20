@@ -28,4 +28,9 @@ class Coffee
     {
         return $this->hasCoffee;
     }
+
+    public function programmersLife()
+    {
+        $this->refill();
+    }
 }
