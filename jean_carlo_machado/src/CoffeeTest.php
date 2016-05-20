@@ -46,6 +46,15 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
         $coffee->programmersLife();
     }
 
+    public function testCoffeeIsDrinkedWhenItsNotEmpty()
+    {
+        $coffee = $this->getMockBuilder(Coffee::class)
+            ->setMethods(['drink'])
+            ->getMock();
+
+        $coffee->expects($this->once())->method('drink');
+        $coffee->programmersLife();
+    }
 
 }
 
