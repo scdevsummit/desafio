@@ -13,3 +13,8 @@ Como mandar seu teste
 Fork do projeto, crie uma pasta com seu nome (como no cracha), ex: '~/sergio_siqueira/' contendo seu código. 
 Após tudo pronto abra um PR.
 
+
+Ferramentas
+-----------
+
+O teste deve usar uma biblioteca da familia Unit (Ex: PHPUnit, jUnit)
