@@ -24,5 +24,16 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase
 
         static::assertTrue($coffee->hasCoffee());
     }
+
+    public function testCoffeeIsRefilledWhenItsEmpty()
+    {
+        $coffee = $this->getMockBuilder(Coffee::class)
+            ->setMethods(['refill'])
+            ->setConstructorArgs([false])
+            ->getMock();
+
+        $coffee->expects($this->once())->method('refill');
+        $coffee->programmersLife();
+    }
 }
 
