@@ -19,4 +19,4 @@ Após tudo pronto abra um PR.
 Ferramentas
 -----------
 
-O teste deve usar uma biblioteca da familia Unit (Ex: PHPUnit, jUnit)
+O teste deve usar uma biblioteca da familia Unit (Ex: PHPUnit, Mocha/Chai)
