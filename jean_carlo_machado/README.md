@@ -1,1 +1,11 @@
-./vendor/bin/phpunit --bootstrap vendor/autoload.php src/CoffeTest.php
+##Run the suite:
+
+```
+$ phpunit
+```
+
+##Get the coverage
+
+```
+$ phpunit --coverage-text
+```
