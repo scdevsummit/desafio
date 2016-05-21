@@ -8,7 +8,12 @@ test('Should there is the Coffee class', () => {
   expect(Coffee).to.be.a('function')
 })
 
-test('Should Coffee has a method isEmpty', () => {
+test('Should Coffee has an isEmpty method', () => {
   const coffee = new Coffee()
   expect(coffee.isEmpty).to.be.a('function')
+})
+
+test('Should Coffee has a refill method', () => {
+  const coffee = new Coffee()
+  expect(coffee.refill).to.be.a('function')
 })
