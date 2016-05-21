@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "nyc ava"
+  },
+  "dependencies": {
+    "ava": "^0.14.0",
+    "nyc": "^6.4.4"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9"
+  }
+}
