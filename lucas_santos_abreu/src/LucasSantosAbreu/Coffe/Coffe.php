@@ -3,6 +3,7 @@
 namespace LucasSantosAbreu\Coffe;
 
 use LucasSantosAbreu\Coffe\Exception\EmptyCoffeMugException;
+use LucasSantosAbreu\Coffe\Exception\FullCoffeMugException;
 
 class Coffe {
 	private $isEmpty;
@@ -24,6 +25,10 @@ class Coffe {
 	}
 
 	public function refill() {
-		$this->isEmpty = false;
+		if (!$this->isEmpty()) {
+			throw new FullCoffeMugException();
+		} else {
+			$this->isEmpty = false;
+		} 
 	}
 }

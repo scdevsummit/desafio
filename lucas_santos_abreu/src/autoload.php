@@ -10,6 +10,7 @@ spl_autoload_register(
             $classes = array(
                 'LucasSantosAbreu\\Coffe\\Coffe' => '/LucasSantosAbreu/Coffe/Coffe.php',
                 'LucasSantosAbreu\\Coffe\\Exception\\EmptyCoffeMugException' => '/LucasSantosAbreu/Coffe/Exception/EmptyCoffeMugException.php',
+                'LucasSantosAbreu\\Coffe\\Exception\\FullCoffeMugException' => '/LucasSantosAbreu/Coffe/Exception/FullCoffeMugException.php',
             );
         }
         $cn = $class;
