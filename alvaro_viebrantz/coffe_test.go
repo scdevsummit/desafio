@@ -9,3 +9,13 @@ func TestIfCoffeIsEmpty(t *testing.T) {
 		t.Error("Coffe should start empty")
 	}
 }
+
+func TestIfCanRefillCoffe(t *testing.T) {
+	coffee := NewCoffee()
+
+	coffee.Refill()
+
+	if coffee.IsEmpty() {
+		t.Error("Coffee should be full after refill")
+	}
+}
