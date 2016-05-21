@@ -12,4 +12,6 @@ Coffee.prototype.refill = function () {
   this.empty = false
 }
 
+Coffee.prototype.drink = function () {}
+
 module.exports = Coffee
