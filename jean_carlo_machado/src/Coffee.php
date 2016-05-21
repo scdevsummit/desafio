@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Desafio;
+namespace Challenge;
 
 /**
  * @author Jean Carlo Machado <contato@jeancarlomachado.com.br>

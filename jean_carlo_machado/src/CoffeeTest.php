@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Desafio;
+namespace Challenge;
 
-use Desafio\Coffee;
+use Challenge\Coffee;
 
 /**
  * @author Jean Carlo Machado <contato@jeancarlomachado.com.br>
