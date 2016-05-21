@@ -37,4 +37,13 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 		return $mug;
 	}
 
+	/**
+	 * @convers \LucasSantosAbreu\Coffe\Coffe::refill
+	 * @depends testCanRefillAEmptyMug
+	 * @expectedException \LucasSantosAbreu\Coffe\Exception\FullCoffeMugException
+	 */
+	public function testCantOverflowCoffeMug($mug) {
+		$mug->refill();
+	}
+
 }
