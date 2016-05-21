@@ -46,4 +46,13 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 		$mug->refill();
 	}
 
+	/**
+	 * @convers \LucasSantosAbreu\Coffe\Coffe::drink
+	 * @depends testCanRefillAEmptyMug
+	 */
+	public function testCanDrinkFromFullCoffeMug($mug) {
+		$mug->drink();
+		$this->assertEquals($mug->isEmpty(), true);
+	}
+
 }
