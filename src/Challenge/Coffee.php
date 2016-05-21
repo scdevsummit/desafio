@@ -10,4 +10,9 @@ class Coffee {
     {
         return $this->empty;
     }
+    
+    public function refill()
+    {
+        $this->empty = false;
+    }
 }
