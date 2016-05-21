@@ -17,3 +17,9 @@ test('Should Coffee has a refill method', () => {
   const coffee = new Coffee()
   expect(coffee.refill).to.be.a('function')
 })
+
+test('Should isEmpty refill method change isEmpty', () => {
+  const coffee = new Coffee()
+  coffee.refill()
+  expect(coffee.isEmpty()).to.be.equal(false)
+})
