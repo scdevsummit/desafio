@@ -2,7 +2,8 @@
 
 const test = require('ava')
 const expect = require('chai').expect
+const Coffee = require('./coffee')
 
-test((t) => {
-  expect(true).to.be.ok
+test('Should there is the Coffee class', () => {
+  expect(Coffee).to.be.a('function')
 })
