@@ -53,6 +53,16 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	public function testCanDrinkFromFullCoffeMug($mug) {
 		$mug->drink();
 		$this->assertEquals($mug->isEmpty(), true);
+		return $mug;
+	}
+
+	/**
+	 * @convers \LucasSantosAbreu\Coffe\Coffe::drink
+	 * @depends testCanDrinkFromFullCoffeMug
+	 * @expectedException \LucasSantosAbreu\Coffe\Exception\EmptyCoffeMugException
+	 */
+	public function testNeedToRefillToDrinkAgain($mug) {
+		$mug->drink();
 	}
 
 }
