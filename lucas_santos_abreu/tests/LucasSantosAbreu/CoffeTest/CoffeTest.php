@@ -3,7 +3,6 @@
 namespace LucasSantosAbreu\CoffeTest;
 
 use LucasSantosAbreu\Coffe\Coffe;
-use LucasSantosAbreu\Coffe\Exception\EmptyCoffeMugException;
 
 class CoffeTest extends \PHPUnit_Framework_TestCase {
 
@@ -14,7 +13,7 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	public function testIsCoffeMugEmptyWhenCreated() {
 		$mug = new Coffe();
 		$isEmpty = $mug->isEmpty();
-		$this->assertEquals($isEmpty, false); 
+		$this->assertEquals($isEmpty, true); 
 		return $mug;
 	}
 
@@ -22,7 +21,7 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	 * @convers \LucasSantosAbreu\Coffe\Coffe::__construct
 	 * @convers \LucasSantosAbreu\Coffe\Coffe::drink
 	 * @depends testIsCoffeMugEmptyWhenCreated
-	 * @expectedException EmptyCoffeMugException
+	 * @expectedException \LucasSantosAbreu\Coffe\Exception\EmptyCoffeMugException
 	 */
 	public function testCantDrinkEmptyCoffeMug ($mug) {
 		$mug->drink();
