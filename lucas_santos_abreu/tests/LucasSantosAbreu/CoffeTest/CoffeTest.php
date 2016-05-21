@@ -22,7 +22,7 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	 * @convers \LucasSantosAbreu\Coffe\Coffe::__construct
 	 * @convers \LucasSantosAbreu\Coffe\Coffe::drink
 	 * @depends testIsCoffeMugEmptyWhenCreated
-	 * @expects EmptyCoffeMugException
+	 * @expectedException EmptyCoffeMugException
 	 */
 	public function testCantDrinkEmptyCoffeMug ($mug) {
 		$mug->drink();
