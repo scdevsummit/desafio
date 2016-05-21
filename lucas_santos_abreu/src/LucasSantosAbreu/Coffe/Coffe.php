@@ -22,4 +22,8 @@ class Coffe {
 			$this->isEmpty = true;
 		}
 	}
+
+	public function refill() {
+		
+	}
 }
