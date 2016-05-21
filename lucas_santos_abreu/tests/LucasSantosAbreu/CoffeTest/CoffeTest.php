@@ -13,7 +13,7 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	public function testIsCoffeMugEmptyWhenCreated() {
 		$mug = new Coffe();
 		$isEmpty = $mug->isEmpty();
-		$this->assertEquals($isEmpty, true); 
+		$this->assertEquals($isEmpty, false); 
 	}
 
 }
