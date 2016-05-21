@@ -18,13 +18,23 @@ class CoffeTest extends \PHPUnit_Framework_TestCase {
 	}
 
 	/**
-	 * @convers \LucasSantosAbreu\Coffe\Coffe::__construct
 	 * @convers \LucasSantosAbreu\Coffe\Coffe::drink
 	 * @depends testIsCoffeMugEmptyWhenCreated
 	 * @expectedException \LucasSantosAbreu\Coffe\Exception\EmptyCoffeMugException
 	 */
 	public function testCantDrinkEmptyCoffeMug ($mug) {
 		$mug->drink();
+	}
+
+	/**
+	 * @convers \LucasSantosAbreu\Coffe\Coffe::refill
+	 * @depends testIsCoffeMugEmptyWhenCreated
+	 */
+	public function testCanRefillAEmptyMug ($mug) {
+		$mug->refill();
+		$this->assertEquals($mug->isEmpty(), false);
+
+		return $mug;
 	}
 
 }
