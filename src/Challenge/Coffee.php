@@ -15,4 +15,9 @@ class Coffee {
     {
         $this->empty = false;
     }
+    
+    public function drink()
+    {
+        $this->empty = true;
+    }
 }

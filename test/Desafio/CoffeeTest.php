@@ -22,5 +22,20 @@ class CoffeeTest extends \PHPUnit_Framework_TestCase {
         
         $this->assertFalse($coffe->isEmpty());
     }
+    
+    public function testShouldDrinkCoffeWhenThereIsCoffee()
+    {
+        $coffe = new Coffee();
+        
+        $this->assertTrue($coffe->isEmpty());
+        
+        $coffe->refill();
+
+        $this->assertFalse($coffe->isEmpty());
+        
+        $coffe->drink();
+        
+        $this->assertTrue($coffe->isEmpty());
+    }
 }
 
