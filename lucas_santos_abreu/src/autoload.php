@@ -9,6 +9,7 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'LucasSantosAbreu\\Coffe\\Coffe' => '/LucasSantosAbreu/Coffe/Coffe.php',
+                'LucasSantosAbreu\\Coffe\\Exception\\EmptyCoffeMugException' => '/LucasSantosAbreu/Coffe/Exception/EmptyCoffeMugException.php',
             );
         }
         $cn = $class;

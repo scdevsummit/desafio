@@ -8,4 +8,8 @@ class Coffe {
 	public function isEmpty() {
 		return $this->isEmpty;
 	}
+
+	public function drink() {
+		
+	}
 }
