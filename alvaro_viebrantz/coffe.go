@@ -14,3 +14,8 @@ func NewCoffee() *Coffee {
 func (c Coffee) IsEmpty() bool {
 	return c.empty
 }
+
+// Refill refill all the coffee
+func (c *Coffee) Refill() {
+	c.empty = false
+}
