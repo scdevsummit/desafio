@@ -19,3 +19,8 @@ func (c Coffee) IsEmpty() bool {
 func (c *Coffee) Refill() {
 	c.empty = false
 }
+
+// Drink drinks all the coffee
+func (c *Coffee) Drink() {
+	c.empty = true
+}
