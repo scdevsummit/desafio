@@ -3,9 +3,9 @@ package main
 import "testing"
 
 func TestIfCoffeIsEmpty(t *testing.T) {
-	coffe := NewCoffee()
+	coffee := NewCoffee()
 
-	if !coffe.IsEmpty() {
+	if !coffee.IsEmpty() {
 		t.Error("Coffe should start empty")
 	}
 }
