@@ -28,3 +28,10 @@ test('Should Coffee has a drink method', () => {
   const coffee = new Coffee()
   expect(coffee.drink).to.be.a('function')
 })
+
+test('Should empty coffee if drink() is called', () => {
+  const coffee = new Coffee()
+  coffee.refill()
+  coffee.drink()
+  expect(coffee.isEmpty()).to.be.equal(true)
+})
