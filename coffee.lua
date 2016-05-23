@@ -15,4 +15,12 @@ function Coffee:isEmpty()
 end
 
 
+function Coffee:drink()
+    if(self.empty) then
+        error("Error: Has no coffee to drink.")
+    end
+    self.empty = true
+end
+
+
 return Coffee
