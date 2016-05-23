@@ -55,6 +55,13 @@ describe("Coffee", function()
 
         end)
 
+        it("Should be empty to refill the coffee", function()
+            coffee.empty = false
+            assert.has_errors(function() coffee:refill() end, "Error: The coffee isn't empty.")
+            assert.is_false(coffee.empty)
+            
+        end)
+
     end)
 
 end)
