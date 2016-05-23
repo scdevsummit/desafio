@@ -25,4 +25,24 @@ describe("Coffee", function()
 
     end)
 
+    describe(":drink()", function()
+        
+        it("Should empty the coffee if it's full", function()
+            
+            coffee.empty = false
+            coffee:drink()
+            assert.is_true(coffee.empty)
+            
+        end)
+
+        it("Should throw a exception when the coffee is empty", function()
+
+            coffee.empty = true
+            assert.has_errors(function() coffee:drink() end, "Error: Has no coffee to drink.")
+            assert.is_true(coffee.empty)
+            
+        end)
+
+    end)
+
 end)
