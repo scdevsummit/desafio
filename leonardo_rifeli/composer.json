@@ -1,0 +1,21 @@
+{
+    "name": "working-annotation",
+    "license": "MIT",
+    "type": "project",
+    "description": "Using annotations",
+    "require":
+    {
+        "phpunit/phpunit": "~4.0",
+        "liip/functional-test-bundle": "1.0.*@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "app/Tests/"
+        ]
+    }
+}
