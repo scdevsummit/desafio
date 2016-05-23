@@ -24,8 +24,10 @@ end
 
 
 function Coffee:refill()
-    
-    
+    if(not self.empty) then
+        error("Error: The coffee isn't empty.")
+    end
+    self.empty = false
 end
 
 
