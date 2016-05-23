@@ -10,5 +10,9 @@ function Coffee.create()
     return coffee
 end
 
+function Coffee:isEmpty()
+    return self.empty
+end
+
 
 return Coffee
