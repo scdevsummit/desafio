@@ -1,0 +1,8 @@
+LucasSantosAbreu\CoffeTest\Coffe
+ [x] Is coffe mug empty when created
+ [x] Cant drink empty coffe mug
+ [x] Can refill a empty mug
+ [x] Cant overflow coffe mug
+ [x] Can drink from full coffe mug
+ [x] Need to refill to drink again
+
