@@ -1,0 +1,23 @@
+{
+  "name": "desafio",
+  "version": "1.0.0",
+  "description": "Resolução do desafio SC Dev Summit.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha coffeeTest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasfcosta/desafio.git"
+  },
+  "author": "Lucas Fernandes da Costa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lucasfcosta/desafio/issues"
+  },
+  "homepage": "https://github.com/lucasfcosta/desafio#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
+}
