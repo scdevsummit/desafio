@@ -1,4 +1,4 @@
-Regulamento do teste 
+Regulamento do teste
 --------------------
 
 Escreva um teste que: verifique se há café, se não houver, preencha com café ou se há café, beba seu café.
