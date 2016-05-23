@@ -23,4 +23,10 @@ function Coffee:drink()
 end
 
 
+function Coffee:refill()
+    
+    
+end
+
+
 return Coffee

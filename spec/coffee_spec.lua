@@ -45,4 +45,16 @@ describe("Coffee", function()
 
     end)
 
+    describe(":refill", function()
+    
+        it("Should fill the coffee cup, setting false to empty ", function()
+
+            coffee.empty = true
+            coffee:refill()
+            assert.is_false(coffee.empty)
+
+        end)
+
+    end)
+
 end)
